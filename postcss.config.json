@@ -1,22 +1,3 @@
 {
-  "plugins": [
-    ["@csstools/postcss-global-data", { "files": [] }],
-    "postcss-flexbugs-fixes",
-    [
-      "postcss-preset-env",
-      {
-        "autoprefixer": {
-          "flexbox": "no-2009"
-        },
-        "stage": 3,
-        "features": {
-          "custom-properties": false
-        }
-      }
-    ],
-    ["postcss-mixins", { "mixinsFiles": [] }],
-    "postcss-simple-vars",
-    "postcss-nesting",
-    "postcss-custom-media"
-  ]
+  "plugins": [["tailwindcss", {}], ["autoprefixer", {}], "postcss-nesting"]
 }

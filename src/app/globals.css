@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
 }
 
@@ -23,6 +27,15 @@ body {
   overflow-x: hidden;
   color: black;
   font-family: var(--font-inter);
+}
+
+.gradient-text {
+  font-family: var(--font-nunito);
+  background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+  font-weight: 800;
 }
 
 a {
