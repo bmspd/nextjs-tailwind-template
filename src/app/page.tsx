@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen">
       <Image className="size-[300px]" src={animationSrc} alt="Main animation" unoptimized />
-      <h1 className="gradient-text">Template for Next.js</h1>
+      <h1 className="gradient-text font-nunito">Template for Next.js</h1>
       <Logo width="300" height="auto" />
     </main>
   )

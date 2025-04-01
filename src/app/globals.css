@@ -1,14 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-}
+@import "tailwindcss";
 
 @media (prefers-color-scheme: dark) {
   :root {
   }
 }
+
+@theme {
+  --font-nunito: var(--font-nunito);
+  --font-inter: var(--font-inter);
+}
+
 
 * {
   box-sizing: border-box;
@@ -30,7 +31,6 @@ body {
 }
 
 .gradient-text {
-  font-family: var(--font-nunito);
   background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
