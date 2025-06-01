@@ -16,7 +16,7 @@
     "next": "^15.2.4",
     "react": "^19",
     "react-dom": "^19",
-    "tailwindcss": "^4.0.17"
+    "tailwindcss": "^4.1.8"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
