@@ -1,5 +1,4 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { ESLint } = require('eslint')
+import { ESLint } from 'eslint'
 
 const removeIgnoredFiles = async (files) => {
   const eslint = new ESLint()
@@ -8,7 +7,7 @@ const removeIgnoredFiles = async (files) => {
   return filteredFiles.join(' ')
 }
 
-module.exports = {
+export default {
   // this will check Typescript files
   '**/*.(ts|tsx)': () => 'tsc -p tsconfig.json --noEmit',
 
