@@ -1,0 +1,8 @@
+# Project Rules
+
+## Imports
+
+- Always use absolute imports with `@` alias instead of relative paths
+- Example: `import { Button } from '@/components/ui/button'` not `import { Button } from '../../components/ui/button'`
+- When refactoring, replace relative imports with absolute `@` imports
+- The `@` alias points to the `src/` directory

@@ -32,7 +32,7 @@ const nextConfig: NextConfig = {
           },
         },
       ],
-      exclude: path.resolve(__dirname, 'src/app/icon.svg'),
+      exclude: path.resolve(__dirname, 'src/app/icon0.svg'),
     })
     return config
   },

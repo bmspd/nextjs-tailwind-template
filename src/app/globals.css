@@ -6,8 +6,8 @@
 }
 
 @theme {
-  --font-nunito: var(--font-nunito);
-  --font-inter: var(--font-inter);
+  --font-nunito: var(--font-nunito-var);
+  --font-inter: var(--font-inter-var);
 }
 
 @layer base {
