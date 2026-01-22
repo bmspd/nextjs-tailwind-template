@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Nunito } from 'next/font/google'
 import './globals.css'
 import clsx from 'clsx'
+import { logger } from '@/lib/logger'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter-var' })
 
@@ -27,8 +28,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  logger.info('ROOT LAYOUT')
   return (
-    <html lang="en" className={clsx(inter.variable, nunito.variable)}>
+    <html lang="en" data-scroll-behavior="smooth" className={clsx(inter.variable, nunito.variable)}>
       <body>{children}</body>
     </html>
   )

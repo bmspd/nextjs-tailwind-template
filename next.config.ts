@@ -6,6 +6,7 @@ const isStandalone = process.env.NEXT_OUTPUT_STANDALONE === 'true'
 const nextConfig: NextConfig = {
   reactStrictMode: false,
   output: isStandalone ? 'standalone' : undefined,
+  serverExternalPackages: ['pino', 'pino-pretty'],
   logging: {
     fetches: {
       fullUrl: true,
