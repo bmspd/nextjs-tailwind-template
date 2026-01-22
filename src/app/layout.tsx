@@ -3,6 +3,7 @@ import { Inter, Nunito } from 'next/font/google'
 import './globals.css'
 import clsx from 'clsx'
 import { logger } from '@/lib/logger'
+import GoogleAnalytics from '@/components/analytics/google-analytics'
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter-var' })
 
@@ -31,6 +32,7 @@ export default function RootLayout({
   logger.info('ROOT LAYOUT')
   return (
     <html lang="en" data-scroll-behavior="smooth" className={clsx(inter.variable, nunito.variable)}>
+      {process.env.NODE_ENV === 'production' && <GoogleAnalytics />}
       <body>{children}</body>
     </html>
   )
