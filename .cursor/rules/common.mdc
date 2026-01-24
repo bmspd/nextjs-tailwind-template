@@ -1,6 +1,11 @@
-# Project Rules
+---
+description: 
+alwaysApply: true
+---
 
-## Imports
+# Import Rules
+
+## Absolute Imports
 
 - Always use absolute imports with `@` alias instead of relative paths
 - Example: `import { Button } from '@/components/ui/button'` not `import { Button } from '../../components/ui/button'`
